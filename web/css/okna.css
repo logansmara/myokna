@@ -1,0 +1,52 @@
+.radiolist1 label {
+	border: 1px solid #ccc;
+	padding-top: 105px;
+	position: relative;
+	width: 150px;
+	height: 125px;
+	text-align: center;
+	margin: 10px;
+}
+.radiolist1 label img {
+	margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+
+/*
+чекбоксы: i стекло, Многофункциональное стекло, Детский замок
+*/
+
+.checkbox {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+	margin-left: 0;
+	margin-top: -20px;
+	left: 50%;
+}
+
+/*
+Если в браузере пользователя javascript отключен, то кнопка не исчезнет ($('.hidden1').hide();).
+*/
+.hidden1 {
+	animation: display 2s 1 ease-in-out;
+}
+@keyframes display {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/*
+Результат
+*/
+.result1 {
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 12px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #777;
+}

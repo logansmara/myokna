@@ -1,0 +1,22 @@
+com2
+1) composer require --prefer-dist yiisoft/yii2-imagine
+2) в папке web/images создал папку proba
+3) model/ProbaImage.php, modules/admin/controllers/ProbaImagesController, modules/admin/views/proba-image
+
+com3  
+1) Добавил в models/PromaImages.php
+   use yii\imagine\Image;
+   после
+   $this->imageFile->saveAs('images/proba/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+   добавил
+   $image = Yii::getAlias('@webroot/images/proba/12.jpg');
+   // Обрежет по ширине на 600px, по высоте пропорционально
+   Image::resize($image, 600, 600)->save(Yii::getAlias('@webroot/images/proba/12-resize.jpg'), ['quality' => 80]);
+com4
+1) Изменения только здесь
+
+com5
+1) Изменил 12.jpg
+   на
+   $this->imageFile->baseName . '.' . $this->imageFile->extension
+

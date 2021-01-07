@@ -1,0 +1,28 @@
+.style1 {
+    color: green;
+}
+.style2 {
+	width: 300px;
+	height: 200px;
+	background: url(/fonts/aeroplan.jpg);
+	padding: 10px;
+}
+.cartplus1, .cartminus1 {
+	border: 1px solid #999;
+	color: #fff;
+	padding: 0 3px;
+	display: inline-block;
+	margin: 2px;
+}
+.cartplus1 {
+    background-color: #25c03e;
+}
+.cartminus1 {
+    background-color: #999;
+}
+.cartplus1:hover {
+    background-color: #299b3c;
+}
+.cartminus1:hover {
+    background-color: #777;
+}
